@@ -106,7 +106,7 @@ type {{ $svc.GetName }}Gateway struct {
 // ServiceDef returns service definition
 func (c *{{ $svc.GetName }}Gateway) ServiceDef() cckit_gateway.ServiceDef {
 	return cckit_gateway.ServiceDef{
-		Desc:                        &_{{ $svc.GetName }}_serviceDesc,
+		Desc:                        &{{ $svc.GetName }}_ServiceDesc,
 		Service:                     c,
 		HandlerFromEndpointRegister: Register{{ $svc.GetName }}HandlerFromEndpoint,
 	}

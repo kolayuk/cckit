@@ -8,10 +8,25 @@ plugins:
   - name: go
     out: .
     opt:
-      - plugins=grpc
+      - paths=source_relative
+
+  - name: go-grpc
+    out: .
+    opt:
       - paths=source_relative
 
   - name: govalidators
     out: .
     opt:
+      - paths=source_relative
+
+  - name: openapiv2
+    out: .
+    opt:
+      - logtostderr=true
+
+  - name: grpc-gateway
+    out: .
+    opt:
+      - logtostderr=true
       - paths=source_relative

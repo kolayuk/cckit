@@ -125,7 +125,7 @@ type DebugStateGateway struct {
 // ServiceDef returns service definition
 func (c *DebugStateGateway) ServiceDef() cckit_gateway.ServiceDef {
 	return cckit_gateway.ServiceDef{
-		Desc:                        &_DebugState_serviceDesc,
+		Desc:                        &DebugState_ServiceDesc,
 		Service:                     c,
 		HandlerFromEndpointRegister: RegisterDebugStateHandlerFromEndpoint,
 	}

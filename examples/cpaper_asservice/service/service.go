@@ -5,6 +5,7 @@ import (
 
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/pkg/errors"
+
 	"github.com/s7techlab/cckit/examples/cpaper_asservice/schema"
 	"github.com/s7techlab/cckit/router"
 	"github.com/s7techlab/cckit/state"
@@ -12,6 +13,7 @@ import (
 )
 
 type CPaperImpl struct {
+	UnimplementedCPaperServer
 }
 
 func New() *CPaperImpl {

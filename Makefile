@@ -1,6 +1,6 @@
 GOFLAGS ?= -mod=vendor
 
-PROTO_PACKAGES_GO := examples/cpaper_extended/schema state/schema examples/cpaper_asservice/schema
+PROTO_PACKAGES_GO := examples/cpaper_extended/schema state/schema examples/cpaper_asservice/schema gateway/events gateway/service
 PROTO_PACKAGES_CCGW := extensions/debug examples/cpaper_asservice/service
 
 test:

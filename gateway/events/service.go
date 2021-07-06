@@ -4,6 +4,7 @@ import (
 	"io"
 
 	"github.com/golang/protobuf/ptypes/empty"
+
 	"github.com/s7techlab/cckit/gateway"
 )
 
@@ -16,7 +17,7 @@ type ChaincodeEventGateway struct {
 // ApiDef returns service definition
 func (c *ChaincodeEventGateway) ApiDef() gateway.ServiceDef {
 	return gateway.ServiceDef{
-		Desc:                        &_ChaincodeEvent_serviceDesc,
+		Desc:                        &ChaincodeEvent_ServiceDesc,
 		Service:                     c,
 		HandlerFromEndpointRegister: RegisterChaincodeEventHandlerFromEndpoint,
 	}

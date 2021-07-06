@@ -8,13 +8,14 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/grpc-ecosystem/grpc-gateway/runtime"
+	"github.com/grpc-ecosystem/grpc-gateway/v2/runtime"
+	"google.golang.org/grpc"
+
 	"github.com/s7techlab/cckit/examples/cpaper_asservice"
 	cpaperservice "github.com/s7techlab/cckit/examples/cpaper_asservice/service"
 	"github.com/s7techlab/cckit/gateway"
 	servicemock "github.com/s7techlab/cckit/gateway/service/mock"
 	"github.com/s7techlab/cckit/testing"
-	"google.golang.org/grpc"
 )
 
 const (
